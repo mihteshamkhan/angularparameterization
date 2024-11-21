@@ -46,6 +46,57 @@ sudo apt install cmake-curses-gui</code></pre>
 
 <pre><code> git clone https://github.com/juseus03/geant4medipix </code></pre>
 <p> To make sure ccmake uses the correct standard, </p>
+
+<H1>Deep Learning Pipeline</H1>
+
+<p>At this point, I will consider that you were able to successfully generate your simulation data (as .h5 file(s)). Now, we proceed to the deep learning pipeline for the project.</p>
+
+<h2>Essentials</h2>
+<p> We need conda! The python scripts we will be using work with particular version(s) of Tensorflow and Keras and those versions require certain version(s) of Python. If you are not as good as building python from scratch like me, conda is a good option.</p>
+
+<pre><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</code></pre>
+<pre><code>bash Miniconda3-latest-Linux-x86_64.sh</code></pre>
+
+<p>Now we can simply have the required python (and pip) version using:</p>
+
+<pre><code>conda create -n myenv python=3.6</code></pre>
+<pre><code>conda activate myenv</code></pre>
+
+<p> There you have it. Now you should successfully have:
+python version: Python 3.6.13 :: Anaconda, Inc.
+pip version: pip 21.2.2 </p>
+
+<h2>Prerequisites</h2>
+<p>Now that we have the right python environment, we can move to more serious installations.</p>
+
+<pre><code>pip install numpy==1.14.5</code></pre>
+<pre><code>pip insall scipy==1.1.0</code></pre>
+<pre><code>pip install h5py==2.8.0</code></pre>
+<pre><code>pip install tensorflow==1.4</code></pre>
+<pre><code>pip install keras==2.1</code></pre>
+
+<p>Or you can reverse engineer from:</p>
+
+<pre><code>pip install -r requirements.txt</code></pre>
+
+<p> where the requirements.txt contains:
+bleach==1.5.0
+certifi==2021.5.30
+dataclasses==0.8
+enum34==1.1.10
+h5py==2.8.0
+html5lib==0.9999999
+importlib-metadata==4.8.3
+Markdown==3.3.7
+numpy==1.14.5
+protobuf==3.19.6
+scipy==1.1.0
+six==1.16.0
+tensorflow==1.4.0
+tensorflow-tensorboard==0.4.0
+typing_extensions==4.1.1
+Werkzeug==2.0.3
+zipp==3.6.0 </p>
 <pre><code>ccmake -DCMAKE_CXX_STANDARD=11 PATH</code></pre>
 <p> Follow the configure, release, generate pattern, and finally,
 <pre><code>make -j N</code></pre>
