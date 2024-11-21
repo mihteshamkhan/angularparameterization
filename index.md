@@ -1,4 +1,6 @@
-<p>This is the complete pipeline for the project</p>
+<H1> Angular Parameterization in a Timepix3 detector using a Convolutional Neural Network</H1>
+
+{% toc %}
 
 <H1> Building Geant4Medipix </H1>
 
