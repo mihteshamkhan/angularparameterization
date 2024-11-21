@@ -47,6 +47,12 @@ sudo apt install cmake-curses-gui</code></pre>
 <pre><code> git clone https://github.com/juseus03/geant4medipix </code></pre>
 <p> To make sure ccmake uses the correct standard, </p>
 
+<pre><code>ccmake -DCMAKE_CXX_STANDARD=11 PATH</code></pre>
+<p> Follow the configure, release, generate pattern, and finally,
+<pre><code>make -j N</code></pre>
+
+<p> Finally we have Geant4Medipix built and ready to use. Make sure to add Geant4Medipix to path. </p>
+
 <H1>Deep Learning Pipeline</H1>
 
 <p>At this point, I will consider that you were able to successfully generate your simulation data (as .h5 file(s)). Now, we proceed to the deep learning pipeline for the project.</p>
@@ -97,9 +103,3 @@ tensorflow-tensorboard==0.4.0
 typing_extensions==4.1.1
 Werkzeug==2.0.3
 zipp==3.6.0 </p>
-<pre><code>ccmake -DCMAKE_CXX_STANDARD=11 PATH</code></pre>
-<p> Follow the configure, release, generate pattern, and finally,
-<pre><code>make -j N</code></pre>
-
-<p> Finally we have Geant4Medipix built and ready to use. Make sure to add Geant4Medipix to path. </p>
-
