@@ -103,3 +103,13 @@ tensorflow-tensorboard==0.4.0
 typing_extensions==4.1.1
 Werkzeug==2.0.3
 zipp==3.6.0 </p>
+
+<H2> Training </H2>
+
+<p> Now that our environment is all set, we can finally clone the python script and train our model. You can download the script as:</p>
+
+<pre><code>https://raw.githubusercontent.com/M4I-nanoscopy/tpx3-event-localisation/refs/heads/master/deeplearning/training.py</code></pre>
+
+<p> Now, we can easily train the model on our simulation data .h5 file. This script can take several arguements. The most important ones are --tot , --toa , --epochs N </p>
+
+<pre><code>python training.py PATH(to .H5 file) --model PATH(to save the model .h5 file) --arguments</code></pre>
