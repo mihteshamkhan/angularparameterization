@@ -113,3 +113,13 @@ zipp==3.6.0 </p>
 <p> Now, we can easily train the model on our simulation data .h5 file. This script can take several arguements. The most important ones are --tot , --toa , --epochs N </p>
 
 <pre><code>python training.py PATH(to .H5 file) --model PATH(to save the model .h5 file) --arguments</code></pre>
+
+<H2> Testing </H2>
+
+<p> We can download the testing script using:</p>
+<pre><code>wget https://raw.githubusercontent.com/M4I-nanoscopy/tpx3-event-localisation/refs/heads/master/deeplearning/testing.py</code></pre>
+
+<p> Now, the final blow: </p>
+<pre><code> python testing.py PATH(to the unseen .h5 file) --model PATH(to the trained model) --arguements </code></pre>
+
+<H1> It ends here! <H1>
