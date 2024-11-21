@@ -1,12 +1,5 @@
 <H1> Angular Parameterization in a Timepix3 detector using a Convolutional Neural Network</H1>
 
----
-layout: default
-title: "My Page Title"
-has_toc: true
-toc_levels: 1..4
----
-
 <H1> Building Geant4Medipix </H1>
 
 <p> The first step is to install all dependencies.</p>
