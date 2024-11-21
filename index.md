@@ -108,7 +108,7 @@ zipp==3.6.0 </p>
 
 <p> Now that our environment is all set, we can finally clone the python script and train our model. You can download the script as:</p>
 
-<pre><code>https://raw.githubusercontent.com/M4I-nanoscopy/tpx3-event-localisation/refs/heads/master/deeplearning/training.py</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/M4I-nanoscopy/tpx3-event-localisation/refs/heads/master/deeplearning/training.py</code></pre>
 
 <p> Now, we can easily train the model on our simulation data .h5 file. This script can take several arguements. The most important ones are --tot , --toa , --epochs N </p>
 
